@@ -35,7 +35,8 @@
         </div>          
             <div class="contact-form">
                 <h2>Send us a Message</h2>
-                   <form id="userForm">
+                   <form action="https://api.web3forms.com/submit" method="POST" id="userForm">
+                        <input type="hidden" name="access_key" value="99220854-85a5-4a30-9b47-5f1dec112425">
                         <input type="text" id="name" name="name" placeholder="Name" required>
                         <input type="email" id="email" name="email" placeholder="Email">
                         <textarea rows="5" cols="60" name="Message" placeholder="Enter text"></textarea>

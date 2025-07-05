@@ -20,8 +20,7 @@ event.preventDefault();
     alert("Please fill in all fields");
   return;
 }
-alert(`Thank you, ${name}! Your email (${email}) has been
-received.`);
+alert(`Thank you, ${name}! Your email (${email}) has been received.`);
 document.getElementById('userForm').reset();
 });
 
