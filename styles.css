@@ -36,6 +36,7 @@ header{
     padding: 4px 0 0 0;
     font-family: 'Creepster', cursive;
     font-size: 48px;
+    
     padding-top: 5px;
 
   text-shadow: 
@@ -76,7 +77,7 @@ nav li {
 }
 
 nav ul li a {
-    color: #e70d0d;
+    color: var(--body);
     text-decoration: none;
     padding: 2rem;                                  
     transition: color 0.3s ease;  
@@ -120,7 +121,7 @@ main{
     font-weight: bold ;
 
 }
-
+    /* upcoming link button */
 .button-link {
     display: inline-block;
     padding: 20px 40px;
@@ -128,7 +129,7 @@ main{
     background-color: transparent;
     border-radius: 10px;
     border: 2px solid black;
-    color: white;
+    color: var(--text);
     text-decoration: none;  
     font-weight: bold;
     transition: background-color 0.3s ease;
@@ -144,7 +145,7 @@ main{
     margin: 0;
 }
 
-
+/* Footer styling and  */
 footer {
     background:  #333233;
     text-align: center;
@@ -201,7 +202,7 @@ h3{
 /* Upcoming styling */
 
 .logo h1{
-    color: red;
+    color: var(--body);
     font-family:'Creepster', cursive;
     padding-top: 20px;
 }
@@ -211,21 +212,31 @@ h3{
     margin: 2px auto;
     margin-bottom: 100px;
     padding: 10px;
-    border: 2px solid red;
+    border: 2px solid var(--body);
     border-radius: 8px;
     display: flex;
     gap: 2rem;
     justify-content: center;
     align-items: baseline; 
 }
+h2{
+    font-size: 28px;
+    text-align: center;
+    color: var(--text);
+    font-weight: weight;
+    font-style: normal;
+    margin-top: 50px;
+    font-family: 'Courier New', Courier, monospace;   
 
+}
 
 .game-content p{
-    color: white;
+    color: var(--text);
     margin: 0 0 1rem 0;   
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    
     
 
 }
@@ -236,28 +247,17 @@ h3{
     width: 100%;
     height: auto;
 }
-h2{
-    font-size: 28px;
-    text-align: center;
-    color: white;
-    font-weight: weight;
-    font-style: normal;
-    margin-top: 50px;
-    font-family: 'Courier New', Courier, monospace;
-    
-
-}
 
 
+
+/* Content fade in */
 .jim-content,
 .kyles-content {
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInUp 5s ease-out forwards;
+  animation: fadeInUp 3s ease-out forwards;
 }
  
-
-
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -266,19 +266,11 @@ h2{
 }
 
 
-
-
-
-
-
-
-
 /*Contact page styling*/
 
 
-
 .contact p{
-  color: white;
+  color: var(--text);
   text-align: center;
   font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
@@ -288,16 +280,17 @@ h2{
   margin-bottom: 60px;
 }
 
+/* form styling */
 input{
   background-color: transparent;
   width:70%;
   margin-left: 12%;
   font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
-  color: white;
+  color: var(--text);
   padding: 16px 16px;
   border-radius: 10px;
-  border-color: black;
+  border-color: var(--border);
 }
 
 textarea{
@@ -306,19 +299,19 @@ textarea{
   margin-left: 12%;
   font-size: 20px;
   padding: 16px 16px;
-  color: white;
+  color: var(--text);
   font-family: 'Courier New', Courier, monospace;
   border-radius: 10px;
-  border-color: black;
+  border-color: var(--border);
   margin-bottom: 25px;
 }
 
 button{
-  background-color: red;
-  color: white;
+  background-color: var(--body);
+  color: var(--text);
   text-align: center;
   font-size: 24px;
-  border: black;
+  border: var(--border);
   border-radius: 10px;
   display: flex;
   margin: auto;

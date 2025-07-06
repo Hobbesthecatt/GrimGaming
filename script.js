@@ -1,3 +1,5 @@
+// Mobile button
+
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("mobile-menu-btn");
   const navList = document.querySelector("nav ul");
@@ -8,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 }
 });
+
+// User form with email validaion
 
 document.getElementById("userForm").addEventListener("submit",function(event) {
 event.preventDefault();
@@ -20,10 +24,12 @@ event.preventDefault();
     alert("Please fill in all fields");
   return;
 }
-alert(`Thank you, ${name}! Your email (${email}) has been received.`);
+alert(`Thank you, ${name}! Your email (${email}) has been
+received.`);
 document.getElementById('userForm').reset();
 });
 
+// Fade in for upcoming content
 document.addEventListener("DOMContentLoaded", () => {
   const fadeElements = document.querySelectorAll(".fade-in");
 
